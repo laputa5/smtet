@@ -1,0 +1,54 @@
+
+$blue-dark:#03417a;
+$orange:#da8515;
+
+#menu_header{
+}
+
+#menu_top_bar{
+    height:10px;
+    background-color:$blue-dark;
+}
+
+#menu_logo{
+    height:100px;
+}
+
+#menu_menu{
+    background-color:$blue-dark;
+    color:white;
+    .current_page {
+        background-color:$orange;
+    }
+    .menu_text {
+        float:left;
+        width:120px;
+        text-align:center;
+    }
+    a {
+        color:white;
+        text-decoration:none;
+    }
+
+}
+
+#menu_images {
+    border:1px black solid;
+    padding-left:20px;
+    #menu_flag{
+        height:80px;
+        padding-top:10px;
+    }
+    #menu_company_spirit{
+        float:right;
+        display:block;
+        height:100px;
+        padding-right:50px;
+    }
+}
+
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}

@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title SMTET
+    = stylesheet_link_tag  "application"
+    = javascript_include_tag "application"
+  %body
+    = render '/layouts/smtet_head' 
+    = yield 
+

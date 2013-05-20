@@ -1,0 +1,271 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* variables */
+$blue-light:#409da5; 
+$purple-blue:#4849a6;
+$red:#cd432d;
+$orange:#da8515;
+$green:#7d9f2a;
+$purple:#672c9b;
+$purple-red:#621354;
+$blue-dark:#03417a;
+
+body.welcome{
+	background:#260930;
+	overflow: hidden;
+}
+
+#wrapper
+{
+    margin: auto;
+    height:520px;
+    width:1018px;
+}
+
+.title{
+    position:relative;
+    display:inline-block;
+}
+
+
+.tile
+{
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover {
+        cursor:pointer;
+        border: 1px #fff solid;
+    }
+}
+
+#wrapper > div.content {
+    z-index:5;
+    visibility:hidden;
+    background-size: 80%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+
+.title {
+    font-weight:bold;
+    color:white;
+}
+
+.tile_image {
+    width:100%;
+    height:100%;
+}
+
+.tile1 {background-color:$blue-light;
+        background-image:url("smtet/0_trademark_logo.jpg");
+        background-size:100% 100%;
+        }
+.tile2 {background-color:$purple-blue; 
+        background-image:url("smtet/0_company_about.png");
+        background-size:100% 100%;
+        }
+.tile3 {background-color:$red; 
+        background-image:url("smtet/0_News.jpg");
+        background-size:contain;
+        }
+.tile4 {background-color:$orange; 
+        background-image:url("smtet/0_video_icon.png");
+        background-size:contain;
+        }
+.tile5 {background-color:$green; 
+        background-image:url("smtet/0_farm.png");
+        background-size:contain;
+        }
+.tile6 {background-color:$purple;
+        background-image:url("smtet/SMTET_logo.jpg");
+        }
+.tile7 {background-color:$purple-red;
+        background-image:url("smtet/factory_visit.jpg");
+       }
+.tile8 {background-color:$blue-light; }
+.tile9 {background-color:$green; }
+.tile10 {background-color:$blue-dark;  
+        background-image:url("smtet/0_office_factory.png");
+        }
+.tile11 {background-color:$green;  
+        background-image:url("smtet/0_company_profile.jpg");
+        }
+.tile12 {background-color:$purple-blue;  }
+.tile13 {background-color:$green;  
+        background-image:url("smtet/0_contact_us_image.jpg");
+        background-size:contain;
+        }
+.tile14 {background-color:$orange;  }
+.tile15 {background-color:$purple;  
+        }
+.tile16 {background-color:$purple-blue;  
+        background-image:url("smtet/0_Yangon_map.jpg");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tile dimensions */
+.tile1{
+position:absolute;
+top:3px;
+left:3px;
+width:179px;
+height:81px;
+}
+
+.tile3{
+position:absolute;
+top:3px;
+left:188px;
+width:179px;
+height:37px;
+}
+
+.tile4{
+position:absolute;
+top:3px;
+left:374px;
+width:179px;
+height:37px;
+}
+
+.tile6{
+position:absolute;
+top:3px;
+left:559px;
+width:458px;
+height:167px;
+}
+
+.tile5{
+position:absolute;
+top:46px;
+left:188px;
+width:365px;
+height:124px;
+}
+
+.tile2{
+position:absolute;
+top:90px;
+left:3px;
+width:179px;
+height:81px;
+}
+
+.tile7{
+position:absolute;
+top:176px;
+left:3px;
+width:365px;
+height:124px;
+}
+
+.tile10{
+position:absolute;
+top:176px;
+left:374px;
+width:458px;
+height:167px;
+}
+
+.tile11{
+position:absolute;
+top:176px;
+left:838px;
+width:179px;
+height:167px;
+}
+
+.tile8{
+position:absolute;
+top:306px;
+left:3px;
+width:179px;
+height:37px;
+}
+
+.tile9{
+position:absolute;
+top:306px;
+left:188px;
+width:179px;
+height:37px;
+}
+
+.tile12{
+position:absolute;
+top:350px;
+left:3px;
+width:179px;
+height:167px;
+}
+
+.tile13{
+position:absolute;
+top:350px;
+left:188px;
+width:179px;
+height:81px;
+}
+
+.tile15{
+position:absolute;
+top:350px;
+left:374px;
+width:458px;
+height:167px;
+}
+
+.tile16{
+position:absolute;
+top:350px;
+left:838px;
+width:179px;
+height:167px;
+}
+
+.tile14{
+position:absolute;
+top:436px;
+left:188px;
+width:179px;
+height:81px;
+}
+
+
+
+
+/* end of tile dimensions */
