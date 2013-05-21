@@ -6,7 +6,7 @@
 #menu_header{
 }
 
-#menu_top_bar{
+.menu_bar{
     height:10px;
     background-color:$blue-dark;
 }
@@ -19,7 +19,10 @@
     background-color:$blue-dark;
     color:white;
     .current_page {
-        background-color:$orange;
+        @include linear-gradient-left-right($orange, white);
+    }
+    .farm_current_page {
+        @include linear-gradient-left-right($green, white);
     }
     .menu_text {
         float:left;
@@ -46,6 +49,17 @@
         height:100px;
         padding-right:50px;
     }
+
+    #menu_farm:first-child{
+        width:100px;
+    }
+    #menu_farm{
+        float:left;
+        display:block;
+        height:100px;
+        width:27%;
+
+    }
 }
 
 .clearfix:after {
@@ -56,7 +70,7 @@
 
 
 /* about  page  */
-#about_side{
+#side_menu{
     float:left;
     width:20%;
     .side_menu_item {
@@ -72,7 +86,8 @@
     }
 
 }
-#about_main{
+
+@mixin main_content_div{
     float:left;
     width:70%;
     color:$blue-dark;
@@ -82,9 +97,21 @@
         margin-top:0px;
     }
 
-    h3 {
+    h3{
         color:white;
+    }
+
+}
+
+#about_main{
+    @include main_content_div;
+
+    h3 {
         @include linear-gradient-left-right($blue-dark, white);
+    }
+
+    h4 {
+        @include linear-gradient-left-right($blue-light, white);
     }
 
     tr.blank_row{
@@ -100,5 +127,34 @@
     .boss_image {
         height:200px;
     }
-    
+}
+
+#farm_main {
+    @include main_content_div;
+
+    h3 {
+        @include linear-gradient-left-right($green, white);
+    }
+
+    h4 {
+        @include linear-gradient-left-right($green-light, white);
+    }
+
+    .side_image {
+        float:right;
+        height:300px;
+    }
+
+    .goal_image {
+        height:300px;
+    }
+}
+
+#consult, #registry{
+    text-align:center;
+    img {
+        height:600px;
+        display:inline-block;
+    }
+
 }

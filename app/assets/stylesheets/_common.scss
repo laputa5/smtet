@@ -1,13 +1,15 @@
 
 /* color variables */
-$blue-light:#409da5; 
+$blue-green:#409da5; 
 $purple-blue:#4849a6;
 $red:#cd432d;
 $orange:#da8515;
 $green:#7d9f2a;
+$green-light:#E5ECD4;
 $purple:#672c9b;
 $purple-red:#621354;
 $blue-dark:#03417a;
+$blue-light:#9AB3CA;
 
 @mixin linear-gradient-left-right($start-color, $end-color) {
   /* fallback */

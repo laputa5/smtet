@@ -1,0 +1,11 @@
+#menu_images.clearfix
+  - if params[:path] == 'farm'
+    %img#menu_farm{:src => image_path('smtet/trademark_logo.jpg')}
+    %img#menu_farm{:src => image_path('smtet/farm_picture2.jpg')}
+    %img#menu_farm{:src => image_path('smtet/farm_picture3.jpg')}
+    %img#menu_farm{:src => image_path('smtet/farm_picture4.jpg')}
+  - else 
+    %img#menu_flag{:src => image_path('smtet/flag_of_hk.jpg')}
+    %img#menu_flag{:src => image_path('smtet/flag_of_myanmar_svg.jpg')}
+    %img#menu_flag{:src => image_path('smtet/flag_of_chinese.jpg')}
+    %img#menu_company_spirit{:src => image_path('smtet/company_spirit.jpg')}

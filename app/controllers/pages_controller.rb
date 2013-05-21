@@ -8,7 +8,13 @@ class PagesController < ApplicationController
   end
 
   def show
-    render "pages/#{params[:path]}"
+    view_name = "pages/#{params[:path]}"
+    if template_exists?(view_name)
+      render view_name
+    else
+      render "pages/default"
+    end
+      
   end
 
 

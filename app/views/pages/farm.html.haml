@@ -1,0 +1,12 @@
+
+%br
+.clearfix
+  - side_menu_items = { '商标介绍' => '#introduction', 
+                        '綠色生態循環示範農場概述' => '#summary',
+                        '目標' => '#goal' }
+  = render :partial => 'pages/side_menu', :locals => { :items => side_menu_items }
+  = render 'pages/farm_main'
+
+
+
+  

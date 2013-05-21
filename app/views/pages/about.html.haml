@@ -1,6 +1,13 @@
 
 %br
 .clearfix
-  = render 'pages/about_side'
+  - side_menu_items = { '公司介紹' => '#introduction', 
+            '公司業務' => '#business', 
+            '公司組織' => '#organization', 
+            '公司主要領導人' => '#leaders' }
+  = render :partial => 'pages/side_menu', :locals => { :items => side_menu_items }
   = render 'pages/about_main'
 
+
+
+  
