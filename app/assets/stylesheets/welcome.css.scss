@@ -3,15 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/* variables */
-$blue-light:#409da5; 
-$purple-blue:#4849a6;
-$red:#cd432d;
-$orange:#da8515;
-$green:#7d9f2a;
-$purple:#672c9b;
-$purple-red:#621354;
-$blue-dark:#03417a;
+@import "common";
 
 body.welcome{
 	background:#260930;

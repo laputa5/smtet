@@ -1,6 +1,7 @@
 
-$blue-dark:#03417a;
-$orange:#da8515;
+@import "common";
+
+/*  header menu styls */
 
 #menu_header{
 }
@@ -51,4 +52,53 @@ $orange:#da8515;
     content:"";
     display:table;
     clear:both;
+}
+
+
+/* about  page  */
+#about_side{
+    float:left;
+    width:20%;
+    .side_menu_item {
+        @include linear-gradient-left-right($blue-dark, white);
+    }
+    .spacer{
+        height:10px;
+        background-color:white;
+    }
+    a {
+        text-decoration:none;
+        color:white;
+    }
+
+}
+#about_main{
+    float:left;
+    width:70%;
+    color:$blue-dark;
+    padding-left:30px;
+
+    a[name="introduction"] h3{
+        margin-top:0px;
+    }
+
+    h3 {
+        color:white;
+        @include linear-gradient-left-right($blue-dark, white);
+    }
+
+    tr.blank_row{
+        height:30px;
+    }
+    td {
+        vertical-align:top;
+        &.first_col{
+            width:100px;
+        }
+    }
+
+    .boss_image {
+        height:200px;
+    }
+    
 }

@@ -1,0 +1,30 @@
+
+/* color variables */
+$blue-light:#409da5; 
+$purple-blue:#4849a6;
+$red:#cd432d;
+$orange:#da8515;
+$green:#7d9f2a;
+$purple:#672c9b;
+$purple-red:#621354;
+$blue-dark:#03417a;
+
+@mixin linear-gradient-left-right($start-color, $end-color) {
+  /* fallback */
+  background-color: $start-color;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from($start-color), to($end-color));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, $start-color, $end-color);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, $start-color, $end-color);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, $start-color, $end-color);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, $start-color, $end-color);
+}
