@@ -1,6 +1,7 @@
 Smtet::Application.routes.draw do
 
   match 'welcome' => 'pages#welcome'
+  match 'home' => 'pages#welcome'
   match '*path' => 'pages#show'
   get "pages/show"
 

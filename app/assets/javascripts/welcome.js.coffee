@@ -6,7 +6,7 @@
 $(document).ready ->
   setTitleFonts()
   positionTitles()
-  $(".tile").click(tileClicked)
+  $(".tile").click(explodeTiles)
   $(".tile").each -> 
     storeDataBeforeExpand($(this))
   
@@ -92,6 +92,35 @@ storeDataBeforeExpand = (tileJObject) ->
   tileJObject.data("titleFontSize", tileJObject.find(".title").css("font-size"))
 
 
+explodeTiles = ->
+  $(".tile").each ->
+    
+    newTop = Math.floor(Math.random() * $(window).height())
+    newLeft = Math.floor(Math.random() * $(window).width())
+    
+    if Math.random() < 0.5 
+      newTop = getRandomOutOfScreenExtreme()
+    else
+      newLeft = getRandomOutOfScreenExtreme()
+      
+    $(this).animate
+      top:newTop
+      left:newLeft
+    , 1000, ->
+      window.location.replace("/about");
+    
 
+getRandomOutOfScreenExtreme = ->
+  extreme = Math.max($(document).width(), $(document).height())
+  if Math.random() < 0.5
+    -2 * extreme
+  else
+    2 * extreme
+    
+
+
+
+  
+    
 
     
