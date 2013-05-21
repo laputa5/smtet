@@ -22,7 +22,7 @@
         @include linear-gradient-left-right($orange, white);
     }
     .farm_current_page {
-        @include linear-gradient-left-right($green, white);
+        @include linear-gradient-left-right($green, $green-light);
     }
     .menu_text {
         float:left;
@@ -100,20 +100,9 @@
     h3{
         color:white;
     }
-
 }
 
-#about_main{
-    @include main_content_div;
-
-    h3 {
-        @include linear-gradient-left-right($blue-dark, white);
-    }
-
-    h4 {
-        @include linear-gradient-left-right($blue-light, white);
-    }
-
+@mixin contact_table {
     tr.blank_row{
         height:30px;
     }
@@ -124,9 +113,24 @@
         }
     }
 
+}
+
+#about_main{
+    @include main_content_div;
+    @include contact_table;
+
+    h3 {
+        @include linear-gradient-left-right($blue-dark, white);
+    }
+
+    h4 {
+        @include linear-gradient-left-right($blue-light, white);
+    }
+
     .boss_image {
         height:200px;
     }
+
 }
 
 #farm_main {
@@ -148,6 +152,27 @@
     .goal_image {
         height:300px;
     }
+}
+
+#contact{
+    @include contact_table;
+    width:70%;
+    .table_div {
+        width:70%;
+        display:inline-block;
+    }
+    color:$blue-dark;
+
+    .float_right{
+        float:right;
+    }
+    
+    td {
+        &.first_col{
+            @include linear-gradient-left-right($blue-light, white);
+        }
+    }
+    
 }
 
 #consult, #registry{
