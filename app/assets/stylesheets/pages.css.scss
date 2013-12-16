@@ -19,10 +19,8 @@
     background-color:$blue-dark;
     color:white;
     .current_page {
-        @include linear-gradient-left-right($orange, white);
-    }
-    .farm_current_page {
-        @include linear-gradient-left-right($green, $green-light);
+        background-color:white;
+        color:$blue-dark;
     }
     .menu_text {
         float:left;
@@ -30,7 +28,7 @@
         text-align:center;
     }
     a {
-        color:white;
+        color:inherit;
         text-decoration:none;
     }
 
